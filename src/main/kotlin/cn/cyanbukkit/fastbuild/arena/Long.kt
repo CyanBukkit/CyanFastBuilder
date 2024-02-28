@@ -1,4 +1,4 @@
-package cn.cyanbukkit.fastbuild.world
+package cn.cyanbukkit.fastbuild.arena
 
 import cn.cyanbukkit.fastbuild.CyanFastBuilder
 import cn.cyanbukkit.fastbuild.utils.BungeePluginMessage

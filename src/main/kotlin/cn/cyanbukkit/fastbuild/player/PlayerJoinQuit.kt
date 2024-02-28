@@ -1,6 +1,7 @@
 package cn.cyanbukkit.fastbuild.player
 
 import cn.cyanbukkit.fastbuild.CyanFastBuilder
+import cn.cyanbukkit.fastbuild.arena.Long
 import cn.cyanbukkit.fastbuild.core.Core
 import org.bukkit.Bukkit
 import org.bukkit.GameMode
@@ -39,7 +40,7 @@ object PlayerJoinQuit : Listener {
             CyanFastBuilder.instance.saveConfig()
         }
         player.gameMode = GameMode.SURVIVAL
-        cn.cyanbukkit.fastbuild.world.Long.join(player, true)
+        Long.join(player, true)
     }
 
 

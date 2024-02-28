@@ -7,7 +7,7 @@ import org.bukkit.event.player.PlayerChangedWorldEvent
 import org.bukkit.event.player.PlayerDropItemEvent
 
 
-object HandleEntity : Listener {
+object HandleWorld : Listener {
 
     @EventHandler
     fun onPlayerDropItemEvent(e: PlayerDropItemEvent) {

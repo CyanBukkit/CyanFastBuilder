@@ -2,8 +2,11 @@ package cn.cyanbukkit.fastbuild
 
 import cn.cyanbukkit.fastbuild.world.PlaceBreakListener
 import cn.cyanbukkit.fastbuild.core.ItemStackList
+import cn.cyanbukkit.fastbuild.player.PlayerHealFood
+import cn.cyanbukkit.fastbuild.player.PlayerJoinQuit
 import cn.cyanbukkit.fastbuild.score.BoardManager
 import cn.cyanbukkit.fastbuild.utils.ScoreBoard
+import cn.cyanbukkit.fastbuild.world.HandleWorld
 import org.bukkit.command.Command
 import org.bukkit.command.SimpleCommandMap
 import org.bukkit.plugin.java.JavaPlugin
@@ -30,6 +33,9 @@ class CyanFastBuilder : JavaPlugin() {
         ItemStackList.load()
         saveDefaultConfig()
         server.pluginManager.registerEvents(PlaceBreakListener, this)
+        server.pluginManager.registerEvents(PlayerHealFood, this)
+        server.pluginManager.registerEvents(PlayerJoinQuit, this)
+        server.pluginManager.registerEvents(HandleWorld, this)
 
         logger.info("CyanFastBuilder is enabled!")
         logger.info("CyanFastBuilder by CyanBukkit Code")
