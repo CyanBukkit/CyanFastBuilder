@@ -1,0 +1,7 @@
+name: CyanFastBuilder
+version: "1.0"
+main: cn.cyanbukkit.fastbuild.CyanFastBuilder
+description: §6别看了吧！就是一个可爱的插件宝宝 CyanBukkit生的
+website: https://cyanbukkit.net
+depend:
+  - CYANKOTLINLOADER
