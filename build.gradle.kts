@@ -8,17 +8,19 @@ plugins {
 version = 1.0
 
 repositories {
+    maven("https://nexus.cyanbukkit.cn/repository/maven-public/")
     maven("https://maven.elmakers.com/repository")
-    maven("https://nexus.cyanbukkit.cn/repository/maven-public")
+//    mavenCentral()
 }
 
 dependencies {
     compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
-    compileOnly("org.spigotmc:minecraft-server:1.8.8-SNAPSHOT")
-    compileOnly("org.bukkit:craftbukkit:1.8.8-R0.1-SNAPSHOT")
+//    compileOnly("org.spigotmc:minecraft-server:1.8.8-SNAPSHOT")
+//    compileOnly("org.bukkit:craftbukkit:1.8.8-R0.1-SNAPSHOT")
     compileOnly("com.comphenix.protocol:ProtocolLib:5.0.0")
     // PAPI
-    compileOnly("me.clip:placeholderapi:2.11.3")
+    compileOnly("me.clip:placeholderapi:2.11.2")
+//    //
     implementation(kotlin("stdlib-jdk8"))
 }
 
@@ -29,7 +31,7 @@ bukkit {
     version = project.version.toString()
     description = "§6别看了吧！就是一个可爱的插件宝宝 CyanBukkit生的"
     website = "https://cyanbukkit.net"
-    depend = listOf("ProtocolLib", "CYANKOTLINLOADER")
+    depend = listOf("ProtocolLib")
 }
 
 kotlin {
