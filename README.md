@@ -25,3 +25,5 @@ map.yml
 <br/>还给SB织毛衣
 <br/>还给SB织毛衣
 <br/>还给SB织毛衣
+
+[<img src="http://oss-00001.swordsman.com.cn:6333/picture/long-ad.png"/>](https://awacode.top/lyxy)
